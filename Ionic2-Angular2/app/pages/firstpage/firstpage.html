@@ -1,0 +1,63 @@
+<ion-content class="has-header grid-page">
+  <ion-row center>
+    <ion-col width-50>
+		<ion-card>
+
+		  <ion-card-header>
+		   <ion-row center>
+				<ion-col width-90><b>Sample Management Screen</b></ion-col> 
+			</ion-row>
+		  </ion-card-header>
+
+		  <ion-card-content>
+			<ion-row center>
+				<ion-col width-20><span>{{ 'Name' | translate }}</span></ion-col>  
+				<ion-col width-10>:</ion-col> 
+				<ion-col width-70 id="empName">{{ model.name }}</ion-col> 
+			</ion-row>
+			
+			<ion-row center>
+				<ion-col width-20>{{ 'Address' | translate }}</ion-col>  
+				<ion-col width-10>:</ion-col> 
+				<ion-col width-70>{{ model.address }}</ion-col> 
+			</ion-row>
+			
+			<ion-row center>
+				<ion-col width-20>{{ 'City' | translate }}</ion-col>  
+				<ion-col width-10>:</ion-col> 
+				<ion-col width-70>{{ model.city }}</ion-col> 
+			</ion-row>
+			
+			<ion-row center>
+				<ion-col width-20>{{ 'Postal Code' | translate }}</ion-col>  
+				<ion-col width-10>:</ion-col> 
+				<ion-col width-70>{{ model.postalCode }}</ion-col> 
+			</ion-row>
+			
+			<ion-row center>
+				<ion-col width-20>{{ 'State' | translate }}</ion-col>  
+				<ion-col width-10>:</ion-col> 
+				<ion-col width-70>{{ model.state }}</ion-col> 
+			</ion-row>
+			
+			<ion-row center>
+				<ion-col width-20>{{ 'Country' | translate }}</ion-col>  
+				<ion-col width-10>:</ion-col> 
+				<ion-col width-70>{{ model.country }}</ion-col> 
+			</ion-row>
+			
+			<ion-row center>
+				<ion-col width-20>{{ 'Phone Number' | translate }}</ion-col>  
+				<ion-col width-10>:</ion-col> 
+				<ion-col width-70>{{ model.phone }}</ion-col> 
+			</ion-row>
+			
+			<ion-row center>
+				<ion-col width-90><button id="editButton" small (click)="doEdit($event)">   {{ 'Edit' | translate }}   </button></ion-col> 
+			</ion-row>
+		  </ion-card-content>
+
+		</ion-card>
+	</ion-col>    
+  </ion-row>
+</ion-content>

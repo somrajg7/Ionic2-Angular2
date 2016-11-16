@@ -1,0 +1,60 @@
+<ion-content class="has-header grid-page">
+  <ion-row center>
+    <ion-col width-50>
+		<form  #heroForm="ngForm" (submit)="doSubmit($event)">
+		<ion-card>
+			<ion-card-header>
+				<ion-row center>
+					<ion-col width-90><b id="heading">Contact Form</b></ion-col> 
+				</ion-row>
+			</ion-card-header>
+
+			<ion-card-content>
+				<ion-row width-90>
+					<ion-list>
+					  <ion-item>
+						<ion-label stacked><b>{{ 'Name' | translate }}</b> &nbsp;&nbsp;<span [hidden]="username.valid" class="alert">{{ 'NameError' | translate }}</span></ion-label>
+						<ion-input id="empName" type="text" [(ngModel)]="model.name" ngControl="username" required #username="ngForm"></ion-input>
+					  </ion-item>
+
+					  <ion-item>
+						<ion-label stacked><b>{{ 'Address' | translate }}</b> &nbsp;&nbsp;<span [hidden]="address.valid" class="alert">{{ 'AddressError' | translate }}</span></ion-label>
+						<ion-input type="text" [(ngModel)]="model.address" ngControl="address" required #address="ngForm"></ion-input>
+					  </ion-item>
+					  
+					  <ion-item>
+						<ion-label stacked><b>{{ 'City' | translate }}</b> &nbsp;&nbsp;<span [hidden]="city.valid" class="alert">{{ 'CityError' | translate }}</span></ion-label>
+						<ion-input type="text" [(ngModel)]="model.city" ngControl="city"  required #city="ngForm"></ion-input>
+					  </ion-item>
+					  
+					  <ion-item>
+						<ion-label stacked><b>{{ 'Postal Code' | translate }}</b> &nbsp;&nbsp;<span [hidden]="postalCode.valid" class="alert">{{ 'Postal Code Error' | translate }}</span></ion-label>
+						<ion-input type="text" [(ngModel)]="model.postalCode" ngControl="postalCode" required #postalCode="ngForm"></ion-input>
+					  </ion-item>
+					  
+					  <ion-item>
+						<ion-label stacked><b>{{ 'State' | translate }}</b> &nbsp;&nbsp;<span [hidden]="state.valid" class="alert">{{ 'StateError' | translate }}</span></ion-label>
+						<ion-input type="text" [(ngModel)]="model.state" ngControl="state" required #state="ngForm"></ion-input>
+					  </ion-item>
+					  
+					   <ion-item>
+						<ion-label stacked><b>{{ 'Country' | translate }}</b> &nbsp;&nbsp;<span [hidden]="country.valid" class="alert">{{ 'CountryError' | translate }}</span></ion-label>
+						<ion-input type="text" [(ngModel)]="model.country"  ngControl="country" required #country="ngForm"></ion-input>
+					  </ion-item>
+					  
+					  <ion-item>
+						<ion-label stacked><b>{{ 'Phone Number' | translate }}</b> &nbsp;&nbsp;<span [hidden]="phone.valid" class="alert">{{ 'Phone Number Error' | translate }}</span></ion-label>
+						<ion-input type="text" [(ngModel)]="model.phone"  ngControl="phone" required #phone="ngForm"></ion-input>
+					  </ion-item>
+					  
+					  <ion-item>
+						<button id="submitButton" full medium>   {{ 'Submit' | translate }}   </button>
+					  </ion-item>
+					</ion-list>
+				</ion-row>
+			</ion-card-content>
+		</ion-card>
+		</form>
+	</ion-col>    
+  </ion-row>
+</ion-content>

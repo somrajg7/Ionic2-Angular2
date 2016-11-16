@@ -1,0 +1,18 @@
+{
+ "Name": "Name",
+ "Address": "Address",
+ "City":"City",
+ "Postal Code":"Postal Code",
+ "State":"State",
+ "Country":"Country",
+ "Phone Number":"Phone Number",
+ "Edit":"Edit",
+ "Submit":"Submit",
+ "NameError": "Name is required",
+ "AddressError": "Address is required",
+ "CityError":"City is required",
+ "Postal Code Error":"Postal Code is required",
+ "StateError":"State is required",
+ "CountryError":"Country is required",
+ "Phone Number Error":"Phone Number is required" 
+}

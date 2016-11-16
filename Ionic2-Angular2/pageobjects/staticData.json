@@ -1,0 +1,11 @@
+{
+  "labels":{
+    "title":"Ionic",
+    "contactForm":"Contact Form"
+  },"buttons":{
+    "edit":"Edit",
+    "submit":"Submit"
+  },"inputs":{
+    "randomText":"Hiln"
+  }
+}
